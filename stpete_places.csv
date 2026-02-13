@@ -1,0 +1,13 @@
+name,city,neighborhood,county,category,sub_category,type,price,vibe_tags,best_for,notes,varun_score,varun_tags
+Cane & Barrel,St Pete,Downtown,Pinellas,drinks,rooftop,bar,$$$,"rooftop,upscale,cocktails,sunset","date_night,girls_night,visitors","Vinoy rooftop",9,"go_to,impress,first_date"
+Canopy,St Pete,Downtown,Pinellas,drinks,rooftop,bar,$$$,"rooftop,views,sunset","date_night,visitors","Birchwood rooftop",8,"sunset,visitors"
+Sparrow,St Pete,Downtown,Pinellas,drinks,rooftop,bar,$$$,"rooftop,modern","date_night","Modern rooftop vibe",7,"date_night"
+Mandarin Hide,St Pete,Downtown,Pinellas,drinks,cocktail_lounge,bar,$$,"speakeasy,intimate,cocktails","date_night","Craft cocktail bar",9,"go_to,intimate"
+Urban Stillhouse,St Pete,Downtown,Pinellas,restaurant,steakhouse,restaurant,$$$$,"steakhouse,romantic,upscale,reservations","anniversary,date_night","Reservation recommended",8,"impress,steak"
+Il Ritorno,St Pete,Downtown,Pinellas,restaurant,italian,restaurant,$$$$,"italian,romantic,fine_dining","date_night","Fine Italian",8,"impress,date_night"
+Olivia,St Pete,Downtown,Pinellas,restaurant,italian,restaurant,$$$$,"italian,upscale,buzzy","date_night","Popular upscale Italian",7,"popular"
+Engine No 9,St Pete,Downtown,Pinellas,restaurant,burgers,restaurant,$$,"burgers,casual","friends,group","Popular burger spot",6,"casual"
+Cassis,St Pete,Downtown,Pinellas,restaurant,french,restaurant,$$$,"brunch,bakery","brunch,date","French brasserie",7,"brunch"
+Ferg's,St Pete,Downtown,Pinellas,drinks,sports_bar,bar,$$,"sports,rays,large_groups","game_day,friends","Big Rays bar",6,"game_day"
+Frenchy's,Clearwater,Clearwater Beach,Pinellas,restaurant,seafood,restaurant,$$,"beach,casual","tourists,friends","Beach seafood",6,"beach_day"
+Oxford Exchange,Tampa,Downtown,Hillsborough,restaurant,brunch,restaurant,$$$,"brunch,instagrammable","brunch,date","Popular brunch spot",7,"brunch,date"
