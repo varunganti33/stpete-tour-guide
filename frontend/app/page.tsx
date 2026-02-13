@@ -9,6 +9,7 @@ export default function Home() {
   const [reply, setReply] = useState("");
 
   async function send() {
+    alert("clicked");
     if (!API_BASE) {
       alert("Missing NEXT_PUBLIC_API_BASE_URL in frontend/.env.local");
       return;
