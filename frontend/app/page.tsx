@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <main style={{ padding: 40, fontFamily: "Arial" }}>
-      <h1>St Pete Tour Guide</h1>
+      <h1>St Pete Tour Guide v2</h1>
 
       <p>Ask for date spots, rooftop drinks, sports bars, etc.</p>
 
