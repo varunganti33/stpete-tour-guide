@@ -9,11 +9,17 @@ export default function Home() {
   const [reply, setReply] = useState("");
 
   async function send() {
-    alert("clicked");
-    if (!API_BASE) {
-      alert("Missing NEXT_PUBLIC_API_BASE_URL in frontend/.env.local");
-      return;
-    }
+  if (!API_BASE) {
+    setReply("Missing NEXT_PUBLIC_API_BASE_URL");
+    return;
+  }
+  if (!message.trim()) {
+    setReply("Type a message first.");
+    return;
+  }
+
+  try {
+    setReply("Loading...");
 
     const res = await fetch(`${API_BASE}/chat`, {
       method: "POST",
@@ -21,9 +27,19 @@ export default function Home() {
       body: JSON.stringify({ message, city: "St Pete" }),
     });
 
-    const data = await res.json();
+    const text = await res.text();
+
+    if (!res.ok) {
+      setReply(`Error ${res.status}: ${text}`);
+      return;
+    }
+
+    const data = JSON.parse(text);
     setReply(data.reply ?? JSON.stringify(data));
+  } catch (e: any) {
+    setReply(`Request failed: ${e?.message ?? e}`);
   }
+}
 
   return (
     <main style={{ padding: 40, fontFamily: "Arial" }}>
