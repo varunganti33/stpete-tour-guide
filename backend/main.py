@@ -22,6 +22,24 @@ if not OPENAI_API_KEY:
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 app = FastAPI(title="St Pete Tour Guide API")
+from fastapi.responses import HTMLResponse
+
+@app.get("/", response_class=HTMLResponse)
+def home():
+    return """
+    <html>
+      <head><title>St Pete Tour Guide</title></head>
+      <body style="font-family: Arial; padding: 40px;">
+        <h1>St Pete Tour Guide API</h1>
+        <p>This is the backend. Use the app UI to chat.</p>
+        <ul>
+          <li><a href="/docs">API Docs</a></li>
+          <li><a href="/health">Health Check</a></li>
+        </ul>
+      </body>
+    </html>
+    """
+
 
 app.add_middleware(
     CORSMiddleware,
